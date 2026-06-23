@@ -1,0 +1,10 @@
+# Persistencia relacional (PostgreSQL em producao, SQLite em testes).
+sqlalchemy>=2.0
+psycopg2-binary>=2.9
+
+# Dependencias de ML para treino/inferencia e integracao com registry.
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+joblib>=1.3
+huggingface-hub>=0.23

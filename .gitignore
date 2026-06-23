@@ -1,0 +1,32 @@
+# Secrets
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Testes e ferramentas
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# Dados locais
+data/
+*.pkl
+*.joblib
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

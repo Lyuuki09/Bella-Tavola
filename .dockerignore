@@ -1,0 +1,45 @@
+# Bytecode Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Controle de versao
+.git
+.gitignore
+.github
+
+# Secrets — nunca devem entrar na imagem
+.env
+*.env
+!.env.example
+
+# Ambientes virtuais
+.venv
+venv
+env
+env_ci_test/
+
+# Artefatos de ML — baixados do Hub em runtime
+*.pkl
+*.joblib
+
+# Testes e cache de ferramentas
+tests/
+pytest.ini
+.pytest_cache
+.ruff_cache
+
+# Cadernos Jupyter
+*.ipynb
+.ipynb_checkpoints
+notebooks/
+
+# Infra local (nao necessaria na imagem de producao)
+docker-compose.yml
+nginx/
+
+# Cursor / IDE
+agent-tools
+agent-transcripts
+.dockerignore
