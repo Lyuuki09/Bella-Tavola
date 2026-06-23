@@ -56,10 +56,10 @@ Parar o ambiente:
 docker compose down
 ```
 
-API disponivel em:
+API disponivel via Nginx em:
 
-- [http://localhost:8000](http://localhost:8000)
-- [http://localhost:8000/docs](http://localhost:8000/docs)
+- [http://localhost](http://localhost)
+- [http://localhost/docs](http://localhost/docs)
 
 ## Build manual da imagem
 
@@ -102,6 +102,7 @@ O CI em `.github/workflows/ci.yml` roda automaticamente a cada `push` e `pull_re
 - validacao de integridade do modelo
 - cache de artefatos Hugging Face
 - verificacao de `HF_TOKEN` via secrets
+- publicacao da imagem Docker no Docker Hub (push para `main`)
 
 ## Observacoes de configuracao
 
