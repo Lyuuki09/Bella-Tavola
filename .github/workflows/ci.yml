@@ -49,7 +49,7 @@ jobs:
           MODEL_FILENAME: model.pkl
           MODEL_VERSION: ci
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          DATABASE_URL: sqlite:///:memory:
+          DATABASE_URL: "sqlite:///:memory:"
         run: |
           pytest -q -m "api and not ml"
 
